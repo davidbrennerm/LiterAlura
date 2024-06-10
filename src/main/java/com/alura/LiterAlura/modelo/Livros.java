@@ -36,6 +36,10 @@ public class Livros {
         this.autores = autores;
         this.linguagem = linguagem;
         this.numeroDeDownloads = numeroDeDownloads;
+        
+       //  if (!livrosData.categoria().isEmpty()) {
+       //  this.categoria = Collections.singletonList(Categoria.fromString(livrosData.categoria().get(0)));
+       // }
     }
 
     public String getNomeDaObra() {
@@ -66,13 +70,13 @@ public class Livros {
         return categoria;
     }
 
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
+    // public void setCategoria(Categoria categoria) {
+    //     this.categoria = categoria;
+    // }
 
-    public Integer getNumeroDeDownloads() {
-        return numeroDeDownloads;
-    }
+    // public Integer getNumeroDeDownloads() {
+    //     return numeroDeDownloads;
+    // }
 
     public void setNumeroDeDownloads(Integer numeroDeDownloads) {
         this.numeroDeDownloads = numeroDeDownloads;
@@ -85,7 +89,7 @@ public class Livros {
                 ", autor=" + (autores != null ? autores.getNomeAutor() : "Desconhecido") +
                 ", nomeDaObra=" + nomeDaObra + '\'' +
                 ", linguagem=" + linguagem + '\'' +
-                ", categoria=" + categoria +
+                // ", categoria=" + categoria +
                 ", numeroDeDownloads=" + numeroDeDownloads;
     }
 }
